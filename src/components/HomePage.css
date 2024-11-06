@@ -1,0 +1,271 @@
+/* Outer container to simulate mobile screen */
+.mobile-screen {
+    width: 375px;
+    /* Typical mobile width */
+    height: 667px;
+    /* Typical mobile height */
+    margin: 0 auto;
+    /* Center on the page */
+    border: 3px solid #091f21;
+    box-shadow: 0px 0px 10px rgba(222, 17, 17, 0.1);
+    overflow: hidden;
+    background-color:  #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Inner HomePage styling */
+.HomePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between header, content, and footer */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    color: #091f21;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header div:first-child {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header div:nth-child(2) {
+    font-size: 15px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.header div:last-child button {
+    font-size: 14px;
+    padding: 5px 10px;
+    align-self: flex-end;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+    height: 40%;
+}
+
+.period {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.first-period {
+    width: 50%;
+    height: 100%;
+}
+
+.period1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* background-color: blueviolet; */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    width: 50%;
+    height: 100%;
+}
+
+.logo-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.name {
+    width: 50%;
+    height: 50%;
+}
+
+
+.period2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.countdown1,
+.countdown2 {
+    width: fit-content;
+    height: 50%;
+    font-weight: bold;
+}
+
+.main-button {
+    width: 100%;
+    height: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.green {
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.violet {
+    background-color: rgb(228, 12, 228);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+.number-button {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(150, 81, 162); */
+}
+
+.first-row-number {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(36, 64, 189); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.num-button-mix1 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(228, 12, 228) 50%, red 50%);
+    border-radius: 25px;
+}
+
+.num-button-mix2 {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(228, 12, 228) 50%, green 50%);
+    border-radius: 25px;
+}
+
+.num-button-odd {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.num-button-even {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.second-row-number {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(213, 44, 21); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.second-container {
+    width: 100%;
+    height: 35%;
+    margin-top: 5%;
+}
+
+.second-container1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.second-container2 {
+    max-height: 200px; /* Set the desired height for scroll */
+    overflow-y: auto; /* Adds a vertical scrollbar */
+    border: 1px solid #ddd; /* Optional: adds a border around the table */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #3498db;
+    color: white;
+    position: sticky;
+    top: 0; /* Keeps headers fixed at the top */
+    z-index: 1;
+}
+.custom-line {
+    border: 0;
+    height: 2px;
+    background-color: #3498db;
+    width: 100%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around; /* Spreads buttons evenly */
+    padding: 3px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.buttonH {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
